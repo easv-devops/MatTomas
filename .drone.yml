@@ -10,7 +10,7 @@ steps:
         /k:"easv-devops_MatTomas_AY2-Ah09EVvRW2O60EB-"
         /d:sonar.host.url="http://sonar.setgo.dk:9000"  
         /d:sonar.token="sqp_b3f3b850a212eb35f9e86ce0aef9b082d738b1d2"
-        /d:sonar.cs.vscodecoveragexml.reportsPaths=coverage.xml
+        /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
         /d:sonar.qualitygate.wait=true
       - dotnet build --no-incremental
       - dotnet-coverage collect "dotnet test" -f xml -o "coverage.xml"
