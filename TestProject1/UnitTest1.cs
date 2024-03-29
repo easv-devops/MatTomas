@@ -38,4 +38,13 @@ public class Tests
         Assert.AreEqual(10, division.getValue(20, 2));
         
     }
+    
+    [TestCase]
+    public void Log()
+    {
+        MatTypes logaritme = new MatTypes(new Logaritme());
+        Assert.AreEqual(2, logaritme.getValue(100, 10));
+        
+    }
+
 }

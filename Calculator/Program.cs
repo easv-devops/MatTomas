@@ -41,7 +41,7 @@ while (running)
 	else
 	{
 		
-		Console.WriteLine("-----Calculation type: +-*/ or end------------");
+		Console.WriteLine("-----Calculation type: +-*/ log or end------------");
 		string caltype = Console.ReadLine();
 			
 		
@@ -71,6 +71,14 @@ while (running)
 				val1 = division.getValue(val1, val2);
 				
 				break;
+			
+			case "log":
+				MatTypes logaritme = new MatTypes(new Logaritme());
+				val1 = logaritme.getValue(val1, val2);
+				
+				break;
+			
+			
 			case "end":
 				running = false;
 				Console.WriteLine("-----Bye---------------------------");

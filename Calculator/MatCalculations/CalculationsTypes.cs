@@ -37,3 +37,14 @@ public class Multiplication : ImatTypes
         return a*b;
     }
 }     
+
+
+
+
+public class Logaritme : ImatTypes
+{
+    public double getValue(double a, double b)
+    {
+        return Math.Log(a, b);
+    }
+}    
